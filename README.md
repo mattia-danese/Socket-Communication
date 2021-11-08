@@ -3,8 +3,8 @@
 ## Unencrypted.py
 ### Set Up:
 `python3 unencrypted.py [--s|--c hostname]`
-- `--s` configures the current machine as the host
-- `--c hostname` configures the current machine as a client and (tries) to connect to `hostname`
+- `--s` configures the current machine as the host (on port 9999)
+- `--c hostname` configures the current machine as a client and (tries) to connect to `hostname` (on port 9999)
 - `--s` must be running before `--c` runs
 ### About:
 - Uses Python `sockets` library
@@ -13,9 +13,9 @@
 
 ## Encrypted.py
 ### Set Up:
-`python3 unencrypted.py [--s|--c hostname] [--confkey K1] [--authkey K2]`
-- `--s` configures the current machine as the host
-- `--c hostname` configures the current machine as a client and (tries) to connect to `hostname`
+`python3 encrypted.py [--s|--c hostname] [--confkey K1] [--authkey K2]`
+- `--s` configures the current machine as the host (on port 9999)
+- `--c hostname` configures the current machine as a client and (tries) to connect to `hostname` (on port 9999)
 - `--confkey K1` specifies the confidentiality key
 - `--authkey K2` specifies the authorization key
 ### About:
